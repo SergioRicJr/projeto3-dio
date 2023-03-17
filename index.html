@@ -11,7 +11,7 @@
 
     <div>   
         <div class="logo">
-            <img src="assets/images/logo.png" width="200"/>
+            <img src="assets/images/png-software-2.jpg" width="200"/>
         </div>
     </div>
 
@@ -21,18 +21,116 @@
         <div class="sidebar">
             <h2>Título</h2>
             <ul>
-                <li><a href="#">Links</a></li>
+                <li><a href="https://posdigital.pucpr.br/blog/tipos-de-arquitetura-de-software">puc arquitetura</a></li>
+                <li><a href="https://www.youtube.com/watch?v=jLlOnsIapdQ">Vídeo Rockseat</a></li>
             </ul>
         </div>
 
         <div class="main">
-            
+            <h1 align="center" id="Arquitetura-inicio">Arquitetura de software</h1>
+            <hr>
+            <p>
+                Quase cinco décadas atrás software constituía uma insignificante parte dos sistemas existentes e seu custo de desenvolvimento e manutenção eram desprezíveis. Para perceber isso, basta olharmos para a história da indústria do software (ver seção Links). Encontramos o uso do software numa ampla variedade de aplicações tais como sistemas de manufatura, software científico, software embarcado, robótica e aplicações Web, dentre tantas. Paralelamente, observou-se o surgimento de várias técnicas de modelagem e projeto bem como de linguagens de programação. Perceba que o cenário existente, décadas atrás, mudou completamente.
+            </p>
+            <p>
+                Antigamente, os projetos de sistemas alocavam pequena parcela ao software. Os componentes de hardware, por outro lado, eram analisados e testados quase exaustivamente, o que permitia a produção rápida de grandes quantidades de subsistemas e implicava em raros erros de projetos. Entretanto, a facilidade de modificar o software, comparativamente ao hardware, tem servido como motivador para seu uso. Além disso, a intensificação do uso do software numa larga variedade de aplicações o fez crescer em tamanho e complexidade. Isto tornou proibitivo analisá-lo e testá-lo exaustivamente, além de impactar no custo de manutenção.
+            </p>
+            <p>
+                Antigamente, os projetos de sistemas alocavam pequena parcela ao software. Os componentes de hardware, por outro lado, eram analisados e testados quase exaustivamente, o que permitia a produção rápida de grandes quantidades de subsistemas e implicava em raros erros de projetos. Entretanto, a facilidade de modificar o software, comparativamente ao hardware, tem servido como motivador para seu uso. Além disso, a intensificação do uso do software numa larga variedade de aplicações o fez crescer em tamanho e complexidade. Isto tornou proibitivo analisá-lo e testá-lo exaustivamente, além de impactar no custo de manutenção.
+            </p>
+            <p>
+                Diferentemente do uso de técnicas que empregam algoritmos e estruturas de dados e das linguagens de programação que implementam tais estruturas, o crescimento dos sistemas de software demanda notações para conectar componentes (módulos) e descrever mecanismos de interação, além de técnicas para gerenciar configurações e controlar versões.
+            </p>
+            <p>
+                A Tabela 1 apresenta o contexto da arquitetura de software. Na programação estruturada, é feito uso de estruturas de seqüência, decisões e repetições como ‘padrões’ de controle nos programas. Já a ocultação de informações é um recurso do paradigma orientado a objetos que permite ao programador, por exemplo, ocultar dados tornando-os seguros de qualquer alteração acidental. Além disso, na programação orientada a objetos, dados e funções podem ser ‘encapsulados’ numa entidade denominada objeto, o que resulta em mais simplicidade e facilidade na manutenção de programas. Por outro lado, os estilos arquiteturais capturam o ‘padrão’ de organização dos componentes de software num programa, caracterizando a forma na qual os componentes comunicam-se entre si.
+            </p>
+            <blockquote>
+                <strong>Tabela 1</strong>. Contexto da arquitetura de software.
+            </blockquote>
+            <table>
+                <thead>
+                    <tr>
+                        <th><strong>Abordagem</strong></th>
+                        <th><strong>Foco</strong></th>
+                        <th><strong>Padrões</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Programação estruturada</td>
+                        <td>Sistemas de pequeno porte</td>
+                        <td>Estruturas de controle</td>
+                    </tr>
+                    <tr>
+                        <td>Abstração e modularização</td>
+                        <td>Sistemas de médio porte</td>
+                        <td>Encapsulamento e ocultação de informações</td>
+                    </tr>
+                    <tr>
+                        <td>Encapsulamento e ocultação de informações</td>
+                        <td>Sistemas de grande porte</td>
+                        <td>Estilos arquiteturais</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                Perceba que a categorização, apresentada na Tabela 1, teve o objetivo de capturar uma visão geral de abordagens aplicadas a sistemas de software. Nada impede, por exemplo, o uso da programação estruturada em sistemas de grande porte ou da ênfase de um estilo arquitetural num sistema de pequeno porte. Entretanto, essa prática não é comum.
+            </p>
+            <figure>
+                <img width="70%" src="./assets/images/R.gif" alt="">
+                <figcaption>Pessoa programando</figcaption>
+            </figure>
+            <figure>
+                <img width="70%" src="./assets/images/png-software-2.jpg" alt="">
+                <figcaption>
+                    Imagem de um computador
+                </figcaption>
+            </figure>
+            <h1 id="importancia">Importância da Arquitetura de software</h1>
+            <p>
+                Todos esses fatores compreendem o projeto no nível arquitetural e estão diretamente relacionados com a organização do sistema e, portanto, afetam os atributos de qualidade (também chamados de <u>requisitos não funcionais</u>) como desempenho, portabilidade, confiabilidade, disponibilidade, entre outros. Se fizermos uma <strong>comparação entre arquitetura de software</strong> (caracterizada, por exemplo, pelo estilo em camadas) e arquitetura ‘clássica’ (relativa à construção de edificações), podemos observar que o projeto arquitetural é determinante para o sucesso do sistema.
+            </p>
+            <p>
+                A Tabela 2 destaca aspectos da representação de projeto que captura elementos característicos da arquitetura enquanto que as restrições estão associadas a atributos de qualidade e, portanto, servem como determinantes nas decisões do projeto arquitetural. Por exemplo, embora o uso de múltiplas camadas facilite a manutenção de um sistema de software, também contribui para degradar o desempenho do sistema. Uma tática tem sido reduzir o nível de acoplamento entre componentes para não comprometer o desempenho do sistema. Dessa forma, se adotarmos uma redução no nível de acoplamento dos componentes, eles terão menor necessidade de comunicação entre si, o que resulta num melhor desempenho.
+            </p>
+            <p>
+                Diversos benefícios decorrem da incorporação da arquitetura de software como ‘elemento norteador’ do processo de desenvolvimento de software. Cabe destacar que a arquitetura pode:
+            </p>
+            <blockquote>
+                <ul>
+                    <li>Diversos benefícios decorrem da incorporação da arquitetura de software como ‘elemento norteador’ do processo de desenvolvimento de software. Cabe destacar que a arquitetura pode:</li>
+                    <li>Servir de base à estimação de custos e gerência do projeto – a existência de uma arquitetura bem definida permite ao gerente de projeto adequadamente alocar tarefas de, por exemplo, implementação de componentes e melhor estimar o tempo e tamanho de equipe necessária para realização de um projeto.</li>
+                    <li>
+                        Servir de base para análise da consistência e dependência – o arquiteto de software pode verificar se a arquitetura de software adotada suporta os atributos de qualidade desejados de modo consistente e avaliar o nível de dependência dos atributos de qualidade em relação à arquitetura. Para tanto, ele faz a análise arquitetural que verifica o suporte oferecido pela arquitetura a um conjunto de atributos de qualidade (como desempenho, portabilidade e confiabilidade).
+                    </li>
+                    <li>
+                        Servir de base para análise da consistência e dependência – o arquiteto de software pode verificar se a arquitetura de software adotada suporta os atributos de qualidade desejados de modo consistente e avaliar o nível de dependência dos atributos de qualidade em relação à arquitetura. Para tanto, ele faz a análise arquitetural que verifica o suporte oferecido pela arquitetura a um conjunto de atributos de qualidade (como desempenho, portabilidade e confiabilidade).
+                    </li>
+                    <li>
+                        Atuar como uma estrutura para atender os requisitos do sistema – a arquitetura ajuda a definir os requisitos funcionais, que compreendem o conjunto de funcionalidades do sistema de software, e requisitos não funcionais (ou atributos de qualidade) que determinam as características visíveis ao usuário como desempenho e confiabilidade
+                    </li>
+                </ul>
+            </blockquote>
+            <h1 id="video">Vídeo sobre arquitetura de software abaixo:</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kYx1QC1XZSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+            <details>
+                <summary>Conteúdos abordados</summary>
+                <ul>
+                    <li>O que é arquitetura de software</li>
+                    <li>Sua importância</li>
+                    <li>Vídeo sobre arquitetura de software</li>
+                </ul>
+            </details>
         </div>
 
         <div class="anchors">
             <h2>Neste Artigo</h2>
             <ul>
-                <li><a href="#">Âncoras</a></li>
+                <li><a href="#Arquitetura-inicio">Inicio</a></li>
+                <li><a href="#importancia">Importância da arquitetura</a></li>
+                <li><a href="#video">Video</a></li>
             </ul>
         </div>
     </div>

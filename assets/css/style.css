@@ -3,7 +3,7 @@ body, html {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-ul { list-style: none; padding-left: 5px; }
+ul { padding-left: 5px; }
 a { color:blue; text-decoration: none;}
 .bar {
     background-color: #f9f9fb;
@@ -35,4 +35,12 @@ a { color:blue; text-decoration: none;}
 }
 figure {
     text-align: center;
+}
+
+table, th, td {
+    border: 1px solid;
+  }
+
+* {
+    scroll-behavior: smooth;
 }
